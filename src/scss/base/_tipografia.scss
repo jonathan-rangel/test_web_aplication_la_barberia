@@ -1,0 +1,78 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+h1, h2, h3 {
+    font-family: v.$fuente_principal;
+    margin: 0 0 calc(v.$separacion / 2) 0 ;
+    font-weight: 900;
+    color: v.$blanco;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+p {
+    color: v.$blanco;
+    font-size: 2rem;
+}
+
+.title {
+    padding: 2rem 0;
+    background-color: v.$yellow-title;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+    .web-title {
+        font-family: v.$font_title;
+        font-size: 10rem;
+        color: v.$negro;
+    }
+    .copy {
+        font-size: 3rem;
+        color: v.$negro;
+    }
+}
+
+.buttons {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    .guest {
+        margin-top: 5rem;
+        grid-column: 1 / 3;
+    }
+}
+
+.text-home {
+    margin-top: 10rem;
+    text-align: center;
+
+    .remember {
+        text-decoration: underline;
+    }
+}
+
+.container-title {
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 2rem;
+    background-color: v.$red-title;
+    margin-bottom: 3rem;
+}
+
+.page-name {
+    text-align: center;
+    margin: 2.5rem 0;
+    font-weight: v.$bold;
+}
+
+.page-details {
+    text-align: center;
+}

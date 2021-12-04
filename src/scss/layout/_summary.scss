@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+
+.content-sum {
+    p {
+        margin-bottom: 1rem;
+    }
+    span {
+        color: v.$azul;
+        font-weight: v.$bold;
+        font-size: 2.4rem;
+    }
+}
+
+.service-container {
+    border: 1px solid v.$gris;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.product-container {
+    border: 1px solid v.$gris;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
